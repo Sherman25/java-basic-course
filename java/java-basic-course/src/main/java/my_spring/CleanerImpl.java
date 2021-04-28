@@ -1,7 +1,13 @@
 package my_spring;
 
 public class CleanerImpl implements Cleaner{
+
+    @InjectRandomInt(min = 3, max = 7)
+    private int repeat;
+
     public void clean(){
-        System.out.println("Cleaning...");
+        for(int i = 0; i < repeat; i++){
+            System.out.println("Cleaning...");
+        }
     }
 }
