@@ -25,7 +25,7 @@ public class ObjectFactory {
         Set<Class<? extends ObjectConfigurator>> classes = scanner.getSubTypesOf(ObjectConfigurator.class);
         for (Class<? extends ObjectConfigurator> aClass : classes) {
             if (!Modifier.isAbstract(aClass.getModifiers())) {
-                configurators.add(aClass.getDeclaredConstructor().newInstance());
+                //configurators.add(aClass.getDeclaredConstructor().newInstance());
             }
         }
     }

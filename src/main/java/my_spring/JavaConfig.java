@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class JavaConfig implements Config {
 
+    private String packageToScan;
     private Map<Class, Class> ifc2ImplClass = new HashMap<>();
 
     public JavaConfig(){

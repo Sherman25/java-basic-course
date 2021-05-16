@@ -2,8 +2,10 @@ package my_spring;
 
 public class ApplicationContext {
 
-    private static final ApplicationContext applicationContext = new ApplicationContext();
+    private Config config;
 
+    public ObjectFactory factor;
+    private static final ApplicationContext applicationContext = new ApplicationContext();
     public ApplicationContext getInstance(){
         return applicationContext;
     }
