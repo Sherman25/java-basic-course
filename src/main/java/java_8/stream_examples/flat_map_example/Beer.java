@@ -9,7 +9,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Beer {
+public class Beer implements Comparable<Beer>{
     private String name;
     private int price;
+
+
+    @Override
+    public int compareTo(Beer beer) {
+        return this.price - beer.price;
+    }
 }
